@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 24</title>
+    <link rel="stylesheet" href="styles/style.css ">
+    <style>
+        .tour-list {
+            color: tomato;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1 id="header-title">Welcome to module 24</h1>
+    </header>
+    <main id="main-container">
+        <section>
+            <h1  id="places" class="some-class random-class blue-bg">Tour of DOM</h1>
+            <ul>
+                <li class="tour-list">ABC</li>
+                <li class="tour-list">DEF</li>
+                <li class="tour-list">GHI</li>
+                <li class="tour-list">JKL</li>
+            </ul>
+        </section>
+        <section id="Fruits-container">
+            <h1>Fruits</h1>
+            <ul id="Fruits-list">
+                <li>Banana</li>
+                <li>Mango</li>
+                <li>Jambura</li>
+                <li>Jackfruits</li>
+            </ul>
+        </section>
+    </main>
+
+    <script src="js/appent.js"></script>
+    <script src="js/styleIn.js"></script>
+
+    <script>
+        const liCollection = document.getElementsByTagName('li')
+        for (const li of liCollection) {
+            // console.log(li.innerText);
+        }
+        const headingCollection = document.getElementsByTagName('h1');
+        for (const h1 of headingCollection) {
+            // console.log(h1.innerText);
+        }
+        const lists = document.getElementsByClassName('tour-list');
+        for (const list of lists) {
+            // console.log(list.innerText);
+        }
+
+        const heading_title = document.getElementById('header-title');
+        heading_title.innerText = "Hi ....Welcome to Humayun Kabir website"
+
+        const places=document.querySelectorAll('.places li');
+        for(const place of places){
+            // console.log(place);
+            // console.log(place.innerText);
+        }
+        const places1=document.querySelector('.places li');
+        // console.log(places1);
+    </script>
+
+</body>
+
+</html>
